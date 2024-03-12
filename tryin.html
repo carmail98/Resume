@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ahmad Kamil Hakim Bin Ghazalli</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #6a0dad;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 10px;
+    }
+    p {
+      margin-bottom: 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+    }
+    #details {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+    }
+    #details.show {
+      max-height: 500px; /* Adjust according to the actual height of your content */
+    }
+    button {
+      background-color: #6a0dad;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Ahmad Kamil Hakim Bin Ghazalli</h1>
+    <p>Civil Engineer & Planning Engineer</p>
+  </header>
+
+  <div class="container">
+    <h2>About Me</h2>
+    <p>I am Ahmad Kamil Hakim Bin Ghazalli, a 26-year-old civil engineer with a background in civil engineering. I graduated with a degree in Civil Engineering and have gained 2 years of experience working as a civil engineer at a consulting firm. Currently, I am working as a planning engineer, where I utilize my skills to contribute effectively to project planning and management.</p>
+
+    <button onclick="toggleDetails()">Toggle Details</button>
+
+    <div id="details">
+      <h2>Contact Information</h2>
+      <p>Email: your_email@example.com</p>
+      <p>Phone: +1234567890</p>
+
+      <h2>Skills</h2>
+      <ul>
+        <li>Civil Engineering</li>
+        <li>Project Planning</li>
+        <li>Project Management</li>
+        <li>AutoCAD</li>
+        <li>Microsoft Project</li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    function toggleDetails() {
+      var details = document.getElementById("details");
+      details.classList.toggle("show");
+    }
+  </script>
+
+</body>
+</html>
